@@ -1,0 +1,117 @@
+/*Header........................*/
+header{
+    position: relative;
+    height: 90px;
+    box-shadow: 1px 2px 7px 4px rgba(239, 231, 231, 0.84);
+    background: linear-gradient(to bottom, #fa74f3, #1b188d);
+}
+header>ul{
+    position: absolute;
+    right:24px;
+    top: 0;
+    list-style: none;
+    font-size: 20px;
+}
+header>ul>li{
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+
+}
+/*main ........................*/
+main{
+    position: relative;
+
+    height: 550px;
+    background: black;
+    box-shadow: 1px 2px 7px 4px rgba(239, 231, 231, 0.84);
+
+}
+main:nth-child(2)>article{
+    position: absolute;
+
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(to bottom, #fa74f3, #1b188d);
+    /*
+    box-shadow: 1px 2px 7px 4px rgba(239, 231, 231, 0.84);
+    */
+
+    border-radius: 100%;
+
+    top: 0;
+    bottom: 0;
+    margin: auto;
+
+    left: 50px;
+
+   padding: 10px;
+
+}
+main:nth-child(2)>article>img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+main:nth-child(2)>pre{
+    position: absolute;
+    color: white;
+    left: 400px;
+    top: 80px;
+    font-size: 50px;
+}
+main:nth-child(2)>h1{
+    position: absolute;
+    color: #e841e1;
+    left: 530px;
+    top: 180px;
+}
+main:nth-child(2)>h3{
+    position: absolute;
+    color: white;
+    left: 520px;
+    top: 240px;
+}
+
+main:nth-child(2)>div{
+    position: absolute;
+    width: 5px;
+    height: 300px;
+    background: white;
+    border-radius: 20px;
+    left: 800px;
+    top: 100px;
+}
+main>pre:nth-child(6){
+    position: absolute;
+    left: 850px;
+    top: 150px;
+    color: white;
+    font-size: 20px;
+}
+main>pre:nth-child(7){
+    position: absolute;
+    left: 850px;
+    top: 200px;
+    color: white;
+    font-size: 20px;
+}
+main>pre:nth-child(8){
+    position: absolute;
+    left: 850px;
+    top: 250px;
+    color: white;
+    font-size: 20px;
+}
+main>img{
+    position: absolute;
+    left: 1200px;
+    top: 100px;
+    /*box-shadow: 10px 2px 7px 4px rgba(222, 222, 107, 0.84);*/
+
+
+}
+/*section 1 ........................*/
