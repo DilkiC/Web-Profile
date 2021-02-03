@@ -1,9 +1,17 @@
-/*Header........................*/
 header{
-    position: relative;
-    height: 90px;
+
+    width: auto;
+    height: 16vh;
+    background:linear-gradient(to bottom, #db44db,black);
     box-shadow: 1px 2px 7px 4px rgba(239, 231, 231, 0.84);
-    background: linear-gradient(to bottom, #fa74f3, #1b188d);
+}
+header > img {
+    padding: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    box-shadow: 1px 2px 2px 2px rgba(239, 231, 231, 0.84);
+
 }
 header>ul{
     position: absolute;
@@ -11,107 +19,2265 @@ header>ul{
     top: 0;
     list-style: none;
     font-size: 20px;
+
 }
 header>ul>li{
     display: inline-block;
-    padding: 10px;
+    padding: 15px;
     cursor: pointer;
     font-weight: bold;
     color: white;
 
 }
-/*main ........................*/
-main{
-    position: relative;
+/*link colors...................*/
+a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
 
-    height: 550px;
+a:visited {
+    color: lightgray;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #e32ee8;
+    background-color: transparent;
+    text-decoration: underline;
+}
+/*link colors...................*/
+main{
+    width: auto;
+    height: 90vh;
     background: black;
     box-shadow: 1px 2px 7px 4px rgba(239, 231, 231, 0.84);
-
 }
-main:nth-child(2)>article{
+main>article{
     position: absolute;
-
     width: 300px;
     height: 300px;
-    background: linear-gradient(to bottom, #fa74f3, #1b188d);
-    /*
-    box-shadow: 1px 2px 7px 4px rgba(239, 231, 231, 0.84);
-    */
+    /*background: linear-gradient(to bottom, #fa74f3, #19176a);*/
+    /*border-radius: 100%;*/
 
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    left: 2vw;
+
+
+}
+main>article::before{
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(to bottom, #fa74f3, #19176a);
     border-radius: 100%;
 
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    left: 2vw;
+
+
+    animation: rotate 2s infinite;
+    transform: rotate(43deg);
+}
+@keyframes rotate {
+    from{
+        transform: rotate(43deg);
+    }
+    to{
+        transform: rotate(403deg);
+    }
+}
+#propic{
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    border-radius: 100%;
+
+    left: 0;
     top: 0;
     bottom: 0;
+    right: 0;
     margin: auto;
-
-    left: 50px;
-
-   padding: 10px;
-
 }
-main:nth-child(2)>article>img{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 100%;
-}
-main:nth-child(2)>pre{
+#email{
     position: absolute;
     color: white;
-    left: 400px;
-    top: 80px;
-    font-size: 50px;
+    bottom: 100px;
+    left: 100px;
+
 }
-main:nth-child(2)>h1{
+#dilki{
+    position: absolute;
+    color: white;
+    left: 30vw;
+    top: 32vh;
+    font-size: 50px;
+
+    animation-name: changecolor;
+    animation-duration: 5s; /*1s for one */
+    animation-iteration-count: infinite;
+}
+/*#dilki:hover{
+    font-size:20px ;
+}*/
+@keyframes changecolor {
+    from{
+        color: #e824d4;
+
+    }
+    to{
+        color: white;
+
+    }
+}
+#cooray{
     position: absolute;
     color: #e841e1;
-    left: 530px;
-    top: 180px;
+    left: 39vw;
+    top: 46vh;
 }
-main:nth-child(2)>h3{
+#developer{
     position: absolute;
     color: white;
-    left: 520px;
-    top: 240px;
+    left: 38vw;
+    top: 56vh;
 }
-
-main:nth-child(2)>div{
+main>div{
     position: absolute;
     width: 5px;
     height: 300px;
     background: white;
     border-radius: 20px;
-    left: 800px;
-    top: 100px;
+    left: 60vw;
+    top: 32vh;
 }
-main>pre:nth-child(6){
+#think{
     position: absolute;
-    left: 850px;
-    top: 150px;
+    left: 65vw;
+    top: 40vh;
     color: white;
     font-size: 20px;
 }
-main>pre:nth-child(7){
+#solve{
     position: absolute;
-    left: 850px;
-    top: 200px;
+    left: 65vw;
+    top: 48vh;
     color: white;
     font-size: 20px;
 }
-main>pre:nth-child(8){
+#code{
     position: absolute;
-    left: 850px;
-    top: 250px;
+    left: 65vw;
+    top: 56vh;
     color: white;
     font-size: 20px;
 }
-main>img{
+/*main>img{
     position: absolute;
-    left: 1200px;
-    top: 100px;
-    /*box-shadow: 10px 2px 7px 4px rgba(222, 222, 107, 0.84);*/
+    left: 90vw;
+    width: 50px;
+    height: 50px;
+    border-radius: 30%;
+    cursor: pointer;
+}*/
+#fbDiv{
+    position: absolute;
+    left: 90vw;
+    width: 50px;
+    height: 50px;
+    border-radius: 30%;
+    cursor: pointer;
+
+    top: 30vh;
+}
+#fbImage{
+    width: 50px;
+    height: 50px;
+    border-radius: 30%;
+}
+
+#whatsappDiv{
+    position: absolute;
+    left: 90vw;
+    width: 50px;
+    height: 50px;
+    border-radius: 30%;
+    cursor: pointer;
+    top: 45vh;
+}
+#whatsappImage{
+    width: 50px;
+    height: 50px;
+    border-radius: 30%;
+}
+#gitDiv{
+    position: absolute;
+    left: 90vw;
+    width: 50px;
+    height: 50px;
+    border-radius: 30%;
+    cursor: pointer;
+    top: 60vh;
+}
+#gitImage{
+    width: 50px;
+    height: 50px;
+    border-radius: 30%;
+}
+#linkedinDiv{
+    position: absolute;
+    left: 90vw;
+    width: 50px;
+    height: 50px;
+    border-radius: 30%;
+    cursor: pointer;
+    top: 75vh;
+}
+#linkedinImage{
+    width: 50px;
+    height: 50px;
+    border-radius: 30%;
+}
+
+section{
+    position: relative;
+    width: auto;
+    height: 100vh;
+    background: black;
+    box-shadow: 1px 2px 7px 4px rgba(239, 231, 231, 0.84);
+}
+section>h1{
+    position: absolute;
+    color: white;
+    padding: 20px;
+    box-shadow: 1px 2px 7px 4px rgba(243, 62, 224, 0.84);
+
+    animation-name: changesize;
+    animation-duration: 2s; /*1s for one */
+    animation-iteration-count: infinite;
+
+}
+@keyframes changesize {
+    from{
+
+        width: 400px;
+    }
+    to{
+
+
+        width: 200px;
+    }
+}
+/*section1-education............................*/
+#mainDiv{
+    position: relative;
+    width: 5px;
+    height: 400px;
+    background: white;
+    border-radius: 20px;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+#holyDiv{
+    position: relative;
+    width: 80px;
+    height: 5px;
+    background: white;
+    border-radius: 20px;
+
+    left: 50vw;
+    top: 10vh;
+    /*margin: auto;*/
+}
+#holyImageDiv{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    left: 57vw;
+    top: 66vh;
+}
+#holyImage{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+#holyYear{
+    position: absolute;
+    color: white;
+    left: 62vw;
+    top: 66vh;
+
+}
+#holyScl{
+    position: absolute;
+    color: white;
+    left: 62vw;
+    top: 70vh;
+}
+
+#LawDiv{
+    position: relative;
+    width: 80px;
+    height: 5px;
+    background: white;
+    border-radius: 20px;
+
+    left: 43vw;
+    bottom: 5vh;
+    /*margin: auto;*/
+}
+#LawImageDiv{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    left: 38vw;
+    top: 52vh;
+}
+#LawImage{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+#LawYear{
+    position: absolute;
+    color: white;
+    left: 29vw;
+    top: 52vh;
+
+}
+#LawScl{
+    position: absolute;
+    color: white;
+    left: 11vw;
+    top: 56vh;
+}
+
+#naiDiv{
+    position: relative;
+    width: 80px;
+    height: 5px;
+    background: white;
+    border-radius: 20px;
+
+    left: 50vw;
+    bottom: 20vh;
+    /*margin: auto;*/
+}
+#naiImageDiv{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    left: 57vw;
+    top: 38vh;
+}
+#naiImage{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+#naiYear{
+    position: absolute;
+    color: white;
+    left: 62vw;
+    top: 38vh;
+
+}
+#naiScl{
+    position: absolute;
+    color: white;
+    left: 62vw;
+    top: 42vh;
+}
+
+#ijseDiv{
+    position: relative;
+    width: 80px;
+    height: 5px;
+    background: white;
+    border-radius: 20px;
+
+    left: 43vw;
+    bottom: 35vh;
+    /*margin: auto;*/
+}
+#ijseImageDiv{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    left: 38vw;
+    top: 25vh;
+}
+#ijseImage{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+#ijseYear{
+    position: absolute;
+    color: white;
+    left: 27vw;
+    top: 24vh;
+
+}
+#ijseScl{
+    position: absolute;
+    color: white;
+    left: 7vw;
+    top: 29vh;
+}
+/*section1-What I Do............................*/
+#secDo>h3:nth-child(2){
+    position: absolute;
+    color: white;
+    left: 45vw;
+    top:22vh;
+}
+#secDo>div{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(to bottom, #e230e2, #5e5353);
+    border-radius: 10%;
+}
+#secDo>h6{
+    position: absolute;
+    /*left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);*/
+
+    left: 2vw;
+    bottom: 0;
 
 
 }
-/*section 1 ........................*/
+#assdiv1{
+    left: 14vw;
+    top: 35vh;
+}
+#assdiv2{
+    left: 30vw;
+    top: 35vh;
+}
+#assdiv3{
+    left: 46vw;
+    top: 35vh;
+}
+#assdiv4{
+    left: 62vw;
+    top: 35vh;
+}
+#assdiv5{
+    left: 78vw;
+    top: 35vh;
+}
+#moreAss{
+    position: absolute;
+    color: white;
+    left: 86vw;
+    top: 50vh;
+}
+#secDo>h3:nth-child(8){
+    position: absolute;
+    color: white;
+    left: 47vw;
+    top:60vh;
+}
+/*#prodiv1{
+    left: 14vw;
+    top:70vh;
+}*/
+#prodiv2{
+    left: 30vw;
+    top:70vh;
+}
+#prodiv3{
+    left: 46vw;
+    top:70vh;
+}
+#prodiv4{
+    left: 62vw;
+    top:70vh;
+}
+/*#prodiv5{
+    left: 78vw;
+    top:70vh;
+}*/
+
+
+/*section1-Skills............................*/
+
+
+#java{
+    position: absolute;
+    color: white;
+    /*bottom: 5vh;*/
+    top: 20vh;
+    left: 20vw;
+}
+#javaDiv1{
+    position: absolute;
+    background: white;
+    width: 300px;
+    height: 5px;
+    border-radius: 20px;
+    top: 28vh;
+    left: 20vw;
+}
+#javaDiv2{
+    position: absolute;
+    background: #ec3ddb;
+    width: 200px;
+    height: 5px;
+    border-radius: 20px;
+    top: 28vh;
+    left: 20vw;
+}
+#sql{
+    position: absolute;
+    color: white;
+    /*bottom: 5vh;*/
+    top: 30vh;
+    left: 20vw;
+}
+#sqlDiv1{
+    position: absolute;
+    background: white;
+    width: 300px;
+    height: 5px;
+    border-radius: 20px;
+    top: 38vh;
+    left: 20vw;
+}
+#sqlDiv2{
+    position: absolute;
+    background: #ec3ddb;
+    width: 250px;
+    height: 5px;
+    border-radius: 20px;
+    top: 38vh;
+    left: 20vw;
+}
+
+#html{
+    position: absolute;
+    color: white;
+    /*bottom: 5vh;*/
+    top: 40vh;
+    left: 20vw;
+}
+#htmlDiv1{
+    position: absolute;
+    background: white;
+    width: 300px;
+    height: 5px;
+    border-radius: 20px;
+    top: 48vh;
+    left: 20vw;
+}
+#htmlDiv2{
+    position: absolute;
+    background: #ec3ddb;
+    width: 280px;
+    height: 5px;
+    border-radius: 20px;
+    top: 48vh;
+    left: 20vw;
+}
+#css{
+    position: absolute;
+    color: white;
+    /*bottom: 5vh;*/
+    top: 50vh;
+    left: 20vw;
+}
+#cssDiv1{
+    position: absolute;
+    background: white;
+    width: 300px;
+    height: 5px;
+    border-radius: 20px;
+    top: 58vh;
+    left: 20vw;
+}
+#cssDiv2{
+    position: absolute;
+    background: #ec3ddb;
+    width: 200px;
+    height: 5px;
+    border-radius: 20px;
+    top: 58vh;
+    left: 20vw;
+}
+#vishu{
+    position: absolute;
+    color: white;
+    /*bottom: 5vh;*/
+    top: 60vh;
+    left: 20vw;
+}
+#vishuDiv1{
+    position: absolute;
+    background: white;
+    width: 300px;
+    height: 5px;
+    border-radius: 20px;
+    top: 68vh;
+    left: 20vw;
+}
+#vishuDiv2{
+    position: absolute;
+    background: #ec3ddb;
+    width: 200px;
+    height: 5px;
+    border-radius: 20px;
+    top: 68vh;
+    left: 20vw;
+}
+/*#sliMain{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 50vw;
+    top: 10vh;
+    background: #fa74f3;
+    overflow: hidden;
+}
+#sliSec{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+
+    animation: slider 10s infinite alternate;
+}
+#sliSec>div{
+    height: 100%;
+    width: 100%;
+}
+#slidiv1{
+    background: url("asserts/image/java.jpg");
+    background-size: cover;
+    background-position: center;
+}
+@keyframes slider {
+    0%,20%{
+        transform: translate(-0%);
+    }
+    25%,45%{
+        transform: translate(-25%);
+    }
+    50%,70%{
+        transform: translate(-50%);
+    }
+    75%,100%{
+        transform: translate(-75%);
+    }
+    !*100%{
+
+    }*!
+}*/
+
+
+/*section1-Experience............................*/
+#secEx{
+    height:50vh ;
+}
+#medFacImgDiv{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 20vh;
+    left: 20vw;
+    border-radius: 30px;
+}
+#medFacImg{
+    /*position: absolute;*/
+    width: 100px;
+    height: 100px;
+    top: 20vh;
+    left: 20vw;
+    border-radius: 30px;
+
+}
+section:nth-child(6)>p{
+    position: absolute;
+    color: white;
+    top: 20vh;
+    left: 30vw;
+    font-size: 20px;
+}
+/*#iframeEx{
+    position: absolute;
+    top: 40vh;
+    left: 30vw;
+    border-top: 10px solid #1b2b7d;
+    border-left: 10px solid #1b2b7d;
+    border-right: 10px solid #1b2b7d;
+    border-bottom: 10px solid #1b2b7d;
+}*/
+/*section1-portfolio & Hobbies............................*/
+section:nth-child(7){
+    height: 150vh;
+}
+section:nth-child(7)>div{
+    position: absolute;
+    top:30vh;
+    left: 22vw;
+    display: flex;
+    /*border: 1px solid hotpink;*/
+    height: 70vh;
+    box-shadow: 1px 2px 7px 4px rgba(243, 54, 219, 0.84);
+
+}
+section:nth-child(7)>div>img{
+    width: 18vw;
+    height: 70vh;
+
+}
+#divider{
+    position: absolute;
+    background: white;
+    width: 500px;
+    height: 5px;
+    border-radius: 20px;
+    /*top: 85vh;
+    left: 30vw;*/
+    left: 0;
+    top: 80vh;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+section:nth-child(7)>img{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 40%;
+    bottom: 10vh;
+    box-shadow: 1px 2px 7px 4px rgba(234, 60, 212, 0.84);
+
+}
+#read{
+    left: 30vw;
+}
+#music{
+    left: 42vw;
+}
+#gard{
+    left: 54vw;
+}
+#poem{
+    left: 66vw;
+}
+/*Section Contact..............................*/
+section:nth-child(8){
+    height: 140vh;
+}
+#name{
+    position: absolute;
+    color: white;
+    left: 10vw;
+    top: 20vh;
+}
+#nameText{
+    position: absolute;
+    background: white;
+    width: 400px;
+    height: 80px;
+    left: 10vw;
+    top: 30vh;
+    border-radius: 20%;
+}
+#contact{
+    position: absolute;
+    color: white;
+    left: 10vw;
+    top: 45vh;
+}
+#contactText{
+    position: absolute;
+    background: white;
+    width: 400px;
+    height: 80px;
+    left: 10vw;
+    top: 55vh;
+    border-radius: 20%;
+}
+#message{
+    position: absolute;
+    color: white;
+    left: 10vw;
+    top: 70vh;
+}
+#messageText{
+    position: absolute;
+    background: white;
+    width: 400px;
+    height: 200px;
+    left: 10vw;
+    top: 80vh;
+    border-radius: 20%;
+}
+#send{
+    position: absolute;
+    background: linear-gradient(to right, #ee22ee, #3d2bd9);
+    left: 50vw;
+    top: 100vh;
+    width: 200px;
+    height: 40px;
+    color: white;
+    border-radius: 20%;
+    cursor: pointer;
+}
+
+
+
+/*footer..............................*/
+footer{
+    position: relative;
+    width: auto;
+    height: 80vh;
+    background: black;
+    box-shadow: 1px 2px 7px 4px rgba(239, 231, 231, 0.84);
+
+}
+#download{
+    position: absolute;
+    background: linear-gradient(to right, #ee22ee, #3d2bd9);
+    left: 5vw;
+    top: 10vh;
+    width: 200px;
+    height: 40px;
+    color: white;
+    border-radius: 20%;
+    cursor: pointer;
+}
+#phone1{
+    position: absolute;
+    color: white;
+    left: 5vw;
+    top: 25vh;
+}
+#phone2{
+    position: absolute;
+    color: white;
+    left: 5vw;
+    top: 30vh;
+}
+#add1{
+    position: absolute;
+    color: white;
+    left: 5vw;
+    top: 40vh;
+}
+#add2{
+    position: absolute;
+    color: white;
+    left: 5vw;
+    top: 45vh;
+}
+#mail1{
+    position: absolute;
+    color: white;
+    left: 5vw;
+    top: 55vh;
+}
+#mail2{
+    position: absolute;
+    color: white;
+    left: 5vw;
+    top: 60vh;
+}
+/*#fbDiv{
+    position: absolute;
+    left: 90vw;
+    width: 50px;
+    height: 50px;
+    border-radius: 30%;
+    cursor: pointer;
+
+    top: 30vh;
+}
+#fbImage{
+    width: 50px;
+    height: 50px;
+    border-radius: 30%;
+}*/
+#fbDiv2{
+    position: absolute;
+    left: 90vw;
+    width: 50px;
+    height: 50px;
+    border-radius: 30%;
+    cursor: pointer;
+
+    top: 10vh;
+}
+#fbImage2{
+    width: 50px;
+    height: 50px;
+    border-radius: 30%;
+}
+#whatsappDiv2{
+    position: absolute;
+    left: 90vw;
+    width: 50px;
+    height: 50px;
+    border-radius: 30%;
+    cursor: pointer;
+    top: 25vh;
+}
+#whatsappImage2{
+    width: 50px;
+    height: 50px;
+    border-radius: 30%;
+}
+#gitDiv2{
+    position: absolute;
+    left: 90vw;
+    width: 50px;
+    height: 50px;
+    border-radius: 30%;
+    cursor: pointer;
+    top: 40vh;
+}
+#gitImage2{
+    width: 50px;
+    height: 50px;
+    border-radius: 30%;
+}
+
+#linkedinDiv2{
+    position: absolute;
+    left: 90vw;
+    width: 50px;
+    height: 50px;
+    border-radius: 30%;
+    cursor: pointer;
+    top: 55vh;
+}
+#linkedinImage2{
+    width: 50px;
+    height: 50px;
+    border-radius: 30%;
+}
+/*media.................................*/
+
+/*media 1*/
+@media all and (max-width: 320px){
+    /*header*/
+    header{
+        height: 9vh;
+    }
+    header>ul{
+        font-size: 2px;
+    }
+    header>img{
+        width: 25px;
+        height: 25px;
+        padding: 7px;
+    }
+    header>ul>li{
+        padding: 6px;
+        font-size: 9px;
+    }
+    main>article{
+        width: 100px;
+        height: 100px;
+        bottom: 60vh;
+        left: 31vw;
+    }
+    main>article::before{
+        width: 100px;
+        height: 100px;
+    }
+    #email{
+        font-size: 8px;
+        bottom: 65vh;
+        left: 35vw;
+    }
+    #dilki{
+        font-size: 14px;
+        left: 13vw;
+        top: 38vh;
+    }
+    #cooray{
+        font-size: 10px;
+        left: 23vw;
+        top:42vh;
+    }
+    main>div{
+        height: 88px;
+        width: 3px;
+        left: 48vw;
+        top: 38vh;
+    }
+    #developer{
+        font-size: 7px;
+        left: 21vw;
+        top: 46vh;
+    }
+    #think{
+        top: 39vh;
+        left: 53vw;
+        font-size: 9px;
+    }
+    #solve{
+        left: 54vw;
+        top: 42vh;
+        font-size: 9px;
+    }
+    #code{
+        left: 54vw;
+        top: 45vh;
+        font-size: 9px;
+    }
+    #fbDiv{
+        left: 76vw;
+        top: 20vh;
+        width: 20px;
+        height: 20px;
+    }
+    #fbImage{
+        width: 20px;
+        height: 20px;
+    }
+    #whatsappDiv{
+        top: 26vh;
+        left: 76vw;
+        width: 20px;
+        height: 20px;
+    }
+    #whatsappImage{
+        width: 20px;
+        height: 20px;
+    }
+    #gitDiv{
+        left: 76vw;
+        width: 20px;
+        height: 20px;
+        top: 32vh;
+    }
+    #gitImage{
+        width: 20px;
+        height: 20px;
+    }
+    #linkedinDiv{
+        left: 76vw;
+        width: 20px;
+        height: 20px;
+        top: 38vh;
+    }
+    #linkedinImage{
+        width: 20px;
+        height: 20px;
+    }
+    #main{
+        height: 48vh;
+    }
+    /*education*/
+    section>h1 {
+        font-size: 15px;
+    }
+    .years{
+        font-size: 15px;
+    }
+    #ijseYear{
+        top: 19vh;
+        left: 34vw;
+    }
+    #naiYear{
+        left: 35vw;
+        top: 28vh;
+    }
+    #LawYear{
+        left: 35vw;
+        top: 37vh;
+    }
+    #holyYear{
+        left: 35vw;
+        top: 46vh;
+    }
+
+    #ijseImage{
+        /*width: 25px;
+        height: 25px;*/
+        display: none;
+    }
+    #naiImage{
+        /*width: 25px;
+        height: 25px;*/
+        display: none;
+    }
+    #ijseImageDiv{
+        /*left: 25vw;
+        top: 19vh;
+        width: 25px;
+        height: 25px;*/
+        display: none;
+    }
+    #naiImageDiv{
+        /*left: 25vw;
+        top: 33vh;
+        width: 25px;
+        height: 25px;*/
+        display: none;
+    }
+    #LawImage{
+        display: none;
+    }
+    #LawImageDiv{
+        display: none;
+    }
+    #holyImage{
+        display: none;
+    }
+    #holyImageDiv{
+        display: none;
+    }
+    #ijseScl{
+        left: 8vw;
+        top: 23vh;
+    }
+    #naiScl{
+        left: 9vw;
+        top: 32vh;
+    }
+    #LawScl{
+        left: 15vw;
+        top: 41vh;
+    }
+    #holyScl{
+        left: 18vw;
+        top: 50vh;
+    }
+    .Scl{
+        font-size: 10px;
+    }
+    #mainDiv{
+        display: none;
+    }
+    .div{
+        display: none;
+    }
+    #secEdu{
+        height: 60vh;
+    }
+
+
+    @keyframes changesize {
+        0%{
+            width: 200px;
+        }
+        100%{
+            width: 100px;
+        }
+    }
+
+    /*what i do*/
+    #secDo>h3:nth-child(2){
+        font-size: 15px;
+        left: 36vw;
+        top: 17vh;
+    }
+    #secDo>h3:nth-child(8){
+        font-size: 15px;
+        left: 42vw;
+        top: 55vh;
+    }
+    #assdiv1{
+        width: 50px;
+        height: 50px;
+        top: 24vh;
+    }
+    #assdiv1>h4{
+        font-size: 10px;
+    }
+    #assdiv2{
+        width: 50px;
+        height: 50px;
+        top: 24vh;
+        left: 50vw;
+    }
+    #moreAss{
+        left: 70vw;
+        top: 42vh;
+    }
+    #assdiv3{
+        display: none;
+    }
+    #assdiv4{
+        display: none;
+    }
+    #assdiv5{
+        display: none;
+    }
+    #prodiv2{
+        width: 50px;
+        height: 50px;
+        top: 64vh;
+        left: 14vw;
+    }
+    #prodiv3{
+        left: 50vw;
+        top: 64vh;
+    }
+    #prodiv4{
+        display: none;
+    }
+
+    /*skills*/
+    .skilNames{
+        font-size: 10px;
+    }
+
+    .whiteColors{
+        width: 240px;
+    }
+    #secSkills{
+        height: 76vh;
+    }
+
+    /*experience*/
+    #medFacImgDiv{
+        display: none;
+    }
+    #secEx>p{
+        font-size: 10px;
+        left: 6vw;
+    }
+    #secEx{
+        height: 37vh;
+    }
+
+    /*portfolio*/
+    section:nth-child(7)>div{
+        top: 22vh;
+        height: 30vh;
+    }
+    section:nth-child(7)>div>img{
+
+        height: 30vh;
+    }
+    #divider{
+        /*width: 220px;
+        top: -33vh;*/
+        display: none;
+    }
+    section:nth-child(7)>img{
+        width: 30px;
+        height: 30px;
+        bottom: 80vh;
+    }
+    #secPort>img{
+display: none;
+    }
+    #secPort{
+        height: 68vh;
+    }
+
+    /*contact*/
+    #secCon>input{
+        width: 240px;
+    }
+    #send{
+        left: 21vw;
+        top: 123vh;
+    }
+    /*footer*/
+    #fbDiv2{
+        display: none;
+    }
+    #whatsappDiv2{
+        display: none;
+    }
+    #gitDiv2{
+        display: none;
+    }
+    #linkedinDiv2{
+        display: none;
+    }
+}
+/*media 2*/
+@media all and (min-width: 320px) and (max-width: 375px) {
+    /*header*/
+    header {
+        height: 9vh;
+    }
+
+    header > ul {
+        font-size: 2px;
+    }
+
+    header > img {
+        width: 25px;
+        height: 25px;
+        padding: 7px;
+    }
+
+    header > ul > li {
+        padding: 6px;
+        font-size: 9px;
+    }
+
+    main > article {
+        width: 100px;
+        height: 100px;
+        bottom: 60vh;
+        left: 31vw;
+    }
+
+    main > article::before {
+        width: 100px;
+        height: 100px;
+    }
+
+    #email {
+        font-size: 8px;
+        bottom: 65vh;
+        left: 35vw;
+    }
+
+    #dilki {
+        font-size: 14px;
+        left: 13vw;
+        top: 38vh;
+    }
+
+    #cooray {
+        font-size: 10px;
+        left: 23vw;
+        top: 42vh;
+    }
+
+    main > div {
+        height: 88px;
+        width: 3px;
+        left: 48vw;
+        top: 38vh;
+    }
+
+    #developer {
+        font-size: 7px;
+        left: 21vw;
+        top: 46vh;
+    }
+
+    #think {
+        top: 39vh;
+        left: 53vw;
+        font-size: 9px;
+    }
+
+    #solve {
+        left: 54vw;
+        top: 42vh;
+        font-size: 9px;
+    }
+
+    #code {
+        left: 54vw;
+        top: 45vh;
+        font-size: 9px;
+    }
+
+    #fbDiv {
+        left: 76vw;
+        top: 20vh;
+        width: 20px;
+        height: 20px;
+    }
+
+    #fbImage {
+        width: 20px;
+        height: 20px;
+    }
+
+    #whatsappDiv {
+        top: 26vh;
+        left: 76vw;
+        width: 20px;
+        height: 20px;
+    }
+
+    #whatsappImage {
+        width: 20px;
+        height: 20px;
+    }
+
+    #gitDiv {
+        left: 76vw;
+        width: 20px;
+        height: 20px;
+        top: 32vh;
+    }
+
+    #gitImage {
+        width: 20px;
+        height: 20px;
+    }
+
+    #linkedinDiv {
+        left: 76vw;
+        width: 20px;
+        height: 20px;
+        top: 38vh;
+    }
+
+    #linkedinImage {
+        width: 20px;
+        height: 20px;
+    }
+
+    #main {
+        height: 48vh;
+    }
+
+    /*education*/
+    section > h1 {
+        font-size: 15px;
+    }
+
+    .years {
+        font-size: 15px;
+    }
+
+    #ijseYear {
+        top: 19vh;
+        left: 34vw;
+    }
+
+    #naiYear {
+        left: 35vw;
+        top: 28vh;
+    }
+
+    #LawYear {
+        left: 35vw;
+        top: 37vh;
+    }
+
+    #holyYear {
+        left: 35vw;
+        top: 46vh;
+    }
+
+    #ijseImage {
+        /*width: 25px;
+        height: 25px;*/
+        display: none;
+    }
+
+    #naiImage {
+        /*width: 25px;
+        height: 25px;*/
+        display: none;
+    }
+
+    #ijseImageDiv {
+        /*left: 25vw;
+        top: 19vh;
+        width: 25px;
+        height: 25px;*/
+        display: none;
+    }
+
+    #naiImageDiv {
+        /*left: 25vw;
+        top: 33vh;
+        width: 25px;
+        height: 25px;*/
+        display: none;
+    }
+
+    #LawImage {
+        display: none;
+    }
+
+    #LawImageDiv {
+        display: none;
+    }
+
+    #holyImage {
+        display: none;
+    }
+
+    #holyImageDiv {
+        display: none;
+    }
+
+    #ijseScl {
+        left: 8vw;
+        top: 23vh;
+    }
+
+    #naiScl {
+        left: 9vw;
+        top: 32vh;
+    }
+
+    #LawScl {
+        left: 15vw;
+        top: 41vh;
+    }
+
+    #holyScl {
+        left: 18vw;
+        top: 50vh;
+    }
+
+    .Scl {
+        font-size: 10px;
+    }
+
+    #mainDiv {
+        display: none;
+    }
+
+    .div {
+        display: none;
+    }
+
+    #secEdu {
+        height: 60vh;
+    }
+
+
+    @keyframes changesize {
+        0% {
+            width: 200px;
+        }
+        100% {
+            width: 100px;
+        }
+    }
+
+    /*what i do*/
+    #secDo > h3:nth-child(2) {
+        font-size: 15px;
+        left: 36vw;
+        top: 17vh;
+    }
+
+    #secDo > h3:nth-child(8) {
+        font-size: 15px;
+        left: 42vw;
+        top: 55vh;
+    }
+
+    #assdiv1 {
+        width: 50px;
+        height: 50px;
+        top: 24vh;
+    }
+
+    #assdiv1 > h4 {
+        font-size: 10px;
+    }
+
+    #assdiv2 {
+        width: 50px;
+        height: 50px;
+        top: 24vh;
+        left: 50vw;
+    }
+
+    #moreAss {
+        left: 65vw;
+        top: 42vh;
+    }
+
+    #assdiv3 {
+        display: none;
+    }
+
+    #assdiv4 {
+        display: none;
+    }
+
+    #assdiv5 {
+        display: none;
+    }
+
+    #prodiv2 {
+        width: 50px;
+        height: 50px;
+        top: 64vh;
+        left: 14vw;
+    }
+
+    #prodiv3 {
+        left: 50vw;
+        top: 64vh;
+    }
+
+    #prodiv4 {
+        display: none;
+    }
+
+    /*skills*/
+    .skilNames {
+        font-size: 10px;
+    }
+
+    .whiteColors {
+        width: 240px;
+    }
+
+    #secSkills {
+        height: 76vh;
+    }
+
+    /*experience*/
+    #medFacImgDiv {
+        display: none;
+    }
+
+    #secEx > p {
+        font-size: 10px;
+        left: 6vw;
+    }
+
+    #secEx {
+        height: 37vh;
+    }
+
+    /*portfolio*/
+    section:nth-child(7) > div {
+        top: 22vh;
+        height: 30vh;
+    }
+
+    section:nth-child(7) > div > img {
+
+        height: 30vh;
+    }
+
+    #divider {
+        /*width: 220px;
+        top: -33vh;*/
+        display: none;
+    }
+
+    section:nth-child(7) > img {
+        width: 30px;
+        height: 30px;
+        bottom: 80vh;
+    }
+
+    #secPort > img {
+        display: none;
+    }
+
+    #secPort {
+        height: 68vh;
+    }
+
+    /*contact*/
+    #secCon > input {
+        width: 240px;
+    }
+
+    #send {
+        left: 21vw;
+        top: 123vh;
+    }
+
+    /*footer*/
+    #fbDiv2 {
+        display: none;
+    }
+
+    #whatsappDiv2 {
+        display: none;
+    }
+
+    #gitDiv2 {
+        display: none;
+    }
+
+    #linkedinDiv2 {
+        display: none;
+    }
+}
+/*media 3*/
+    @media all and (min-width: 375px) and (max-width: 425px) {
+        /*header*/
+        header {
+            height: 9vh;
+        }
+
+        header > ul {
+            font-size: 2px;
+        }
+
+        header > img {
+            width: 25px;
+            height: 25px;
+            padding: 7px;
+        }
+
+        header > ul > li {
+            padding: 6px;
+            font-size: 9px;
+        }
+
+        main > article {
+            width: 100px;
+            height: 100px;
+            bottom: 60vh;
+            left: 31vw;
+        }
+
+        main > article::before {
+            width: 100px;
+            height: 100px;
+        }
+
+        #email {
+            font-size: 8px;
+            bottom: 65vh;
+            left: 35vw;
+        }
+
+        #dilki {
+            font-size: 14px;
+            left: 13vw;
+            top: 38vh;
+        }
+
+        #cooray {
+            font-size: 10px;
+            left: 23vw;
+            top: 42vh;
+        }
+
+        main > div {
+            height: 88px;
+            width: 3px;
+            left: 48vw;
+            top: 38vh;
+        }
+
+        #developer {
+            font-size: 7px;
+            left: 21vw;
+            top: 46vh;
+        }
+
+        #think {
+            top: 39vh;
+            left: 53vw;
+            font-size: 9px;
+        }
+
+        #solve {
+            left: 54vw;
+            top: 42vh;
+            font-size: 9px;
+        }
+
+        #code {
+            left: 54vw;
+            top: 45vh;
+            font-size: 9px;
+        }
+
+        #fbDiv {
+            left: 76vw;
+            top: 20vh;
+            width: 20px;
+            height: 20px;
+        }
+
+        #fbImage {
+            width: 20px;
+            height: 20px;
+        }
+
+        #whatsappDiv {
+            top: 26vh;
+            left: 76vw;
+            width: 20px;
+            height: 20px;
+        }
+
+        #whatsappImage {
+            width: 20px;
+            height: 20px;
+        }
+
+        #gitDiv {
+            left: 76vw;
+            width: 20px;
+            height: 20px;
+            top: 32vh;
+        }
+
+        #gitImage {
+            width: 20px;
+            height: 20px;
+        }
+
+        #linkedinDiv {
+            left: 76vw;
+            width: 20px;
+            height: 20px;
+            top: 38vh;
+        }
+
+        #linkedinImage {
+            width: 20px;
+            height: 20px;
+        }
+
+        #main {
+            height: 48vh;
+        }
+
+        /*education*/
+        section > h1 {
+            font-size: 15px;
+        }
+
+        .years {
+            font-size: 15px;
+        }
+
+        #ijseYear {
+            top: 19vh;
+            left: 40vw;
+        }
+
+        #naiYear {
+            left: 40vw;
+            top: 28vh;
+        }
+
+        #LawYear {
+            left: 40vw;
+            top: 37vh;
+        }
+
+        #holyYear {
+            left: 40vw;
+            top: 46vh;
+        }
+
+        #ijseImage {
+            /*width: 25px;
+            height: 25px;*/
+            display: none;
+        }
+
+        #naiImage {
+            /*width: 25px;
+            height: 25px;*/
+            display: none;
+        }
+
+        #ijseImageDiv {
+            /*left: 25vw;
+            top: 19vh;
+            width: 25px;
+            height: 25px;*/
+            display: none;
+        }
+
+        #naiImageDiv {
+            /*left: 25vw;
+            top: 33vh;
+            width: 25px;
+            height: 25px;*/
+            display: none;
+        }
+
+        #LawImage {
+            display: none;
+        }
+
+        #LawImageDiv {
+            display: none;
+        }
+
+        #holyImage {
+            display: none;
+        }
+
+        #holyImageDiv {
+            display: none;
+        }
+
+        #ijseScl {
+            left: 20vw;
+            top: 23vh;
+        }
+
+        #naiScl {
+            /*left: 9vw;*/
+            left: 21vw;
+            top: 32vh;
+        }
+
+        #LawScl {
+            left: 25vw;
+            top: 41vh;
+        }
+
+        #holyScl {
+            left: 25vw;
+            top: 50vh;
+        }
+
+        .Scl {
+            font-size: 10px;
+        }
+
+        #mainDiv {
+            display: none;
+        }
+
+        .div {
+            display: none;
+        }
+
+        #secEdu {
+            height: 60vh;
+        }
+
+
+        @keyframes changesize {
+            0% {
+                width: 200px;
+            }
+            100% {
+                width: 100px;
+            }
+        }
+
+        /*what i do*/
+        #secDo > h3:nth-child(2) {
+            font-size: 15px;
+            left: 36vw;
+            top: 17vh;
+        }
+
+        #secDo > h3:nth-child(8) {
+            font-size: 15px;
+            left: 42vw;
+            top: 55vh;
+        }
+
+        #assdiv1 {
+            width: 50px;
+            height: 50px;
+            top: 24vh;
+        }
+
+        #assdiv1 > h4 {
+            font-size: 10px;
+        }
+
+        #assdiv2 {
+            width: 50px;
+            height: 50px;
+            top: 24vh;
+            left: 50vw;
+        }
+
+        #moreAss {
+            left: 65vw;
+            top: 42vh;
+        }
+
+        #assdiv3 {
+            display: none;
+        }
+
+        #assdiv4 {
+            display: none;
+        }
+
+        #assdiv5 {
+            display: none;
+        }
+
+        #prodiv2 {
+            width: 50px;
+            height: 50px;
+            top: 64vh;
+            left: 14vw;
+        }
+
+        #prodiv3 {
+            left: 50vw;
+            top: 64vh;
+        }
+
+        #prodiv4 {
+            display: none;
+        }
+
+        /*skills*/
+        .skilNames {
+            font-size: 10px;
+        }
+
+        .whiteColors {
+            width: 240px;
+        }
+
+        #secSkills {
+            height: 76vh;
+        }
+
+        /*experience*/
+        #medFacImgDiv {
+            display: none;
+        }
+
+        #secEx > p {
+            font-size: 10px;
+            left: 6vw;
+        }
+
+        #secEx {
+            height: 37vh;
+        }
+
+        /*portfolio*/
+        section:nth-child(7) > div {
+            top: 22vh;
+            height: 30vh;
+        }
+
+        section:nth-child(7) > div > img {
+
+            height: 30vh;
+        }
+
+        #divider {
+            /*width: 220px;
+            top: -33vh;*/
+            display: none;
+        }
+
+        section:nth-child(7) > img {
+            width: 30px;
+            height: 30px;
+            bottom: 80vh;
+        }
+
+        #secPort > img {
+            display: none;
+        }
+
+        #secPort {
+            height: 68vh;
+        }
+
+        /*contact*/
+        #secCon > input {
+            width: 240px;
+        }
+
+        #send {
+            left: 21vw;
+            top: 123vh;
+        }
+
+        /*footer*/
+        #fbDiv2 {
+            display: none;
+        }
+
+        #whatsappDiv2 {
+            display: none;
+        }
+
+        #gitDiv2 {
+            display: none;
+        }
+
+        #linkedinDiv2 {
+            display: none;
+        }
+
+    }
+/*media 4*/
+@media all and (min-width: 425px) and (max-width: 768px) {
+    /*header*/
+    header{
+        height: 22vh;
+    }
+    header>ul>li{
+        padding:10px ;
+    }
+    header>img{
+        display: none;
+    }
+    main > article {
+        width: 200px;
+        height: 200px;
+        /*bottom: 60vh;
+        left: 31vw;*/
+    }
+    main > article::before {
+        width: 200px;
+        height: 200px;
+    }
+    #email {
+        left: 8vw;
+    }
+
+    #dilki {
+        font-size: 27px;
+        left: 33vw;
+        top: 39vh;
+    }
+
+   /*education*/
+    #mainDiv{
+        height: 308px;
+    }
+    #holyDiv{
+        width: 50px;
+    }
+    #LawDiv{
+        width: 50px;
+    }
+    #naiDiv{
+        width: 50px;
+    }
+    #ijseDiv{
+        width: 50px;
+    }
+    #LawImageDiv{
+        left: 36vw;
+    }
+    #holyYear{
+        font-size: 12px;
+        left: 65vw
+    }
+    #LawYear{
+        font-size: 12px;
+        left: 24vw
+    }
+    #naiYear{
+        font-size: 12px;
+        left: 65vw;
+    }
+    #ijseYear{
+        font-size: 12px;
+        left: 23vw;
+        top: 26vh;
+    }
+    #ijseScl{
+        font-size: 12px;
+        left: 2vw;
+        top: 31vh;
+    }
+    #naiScl{
+        font-size: 12px;
+        left: 65vw;
+    }
+    #holyScl{
+        font-size: 12px;
+        left: 65vw
+    }
+    #LawScl{
+        font-size: 12px;
+        left: 2vw;
+    }
+    /*experience*/
+    section:nth-child(6)>p{
+        left: 35vw;
+    }
+    /*contact*/
+    #send{
+        top: 121vh;
+        left: 65vw;
+    }
+
+
+}
+/*media 5*/
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    #email{
+        bottom: 72px;
+    }
+    #dilki{
+        font-size: 37px;
+        left: 33vw;
+    }
+    #holyImageDiv{
+        top: 73vh;
+    }
+    #holyYear{
+        top: 72vh;
+    }
+    #holyScl{
+        top: 76vh;
+    }
+    #LawDiv{
+        left: 42vw;
+    }
+    #LawImageDiv{
+        top: 57vh;
+    }
+    #LawYear{
+        left: 27vw;
+        top: 54vh;
+    }
+    #LawScl{
+        left: 3vw;
+        top: 58vh;
+    }
+    #mainDiv{
+        top: 57%;
+    }
+    #naiImageDiv{
+        left: 55vw;
+        top: 42vh;
+    }
+    #naiYear{
+        left: 60vw;
+    }
+    #naiScl{
+        left: 60vw;
+    }
+    #ijseDiv{
+        left: 42vw;
+    }
+    #ijseImageDiv{
+        top: 31vh;
+    }
+#ijseYear{
+    left: 24vw;
+    top: 29vh;
+}
+#ijseScl{
+    left: 1vw;
+    top: 36vh;
+}
+}
+
+
