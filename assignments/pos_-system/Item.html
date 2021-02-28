@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>POS System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="asserts/css/bootstrap.css">
+    <link rel="stylesheet" href="styleNew.css">
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <a class="navbar-brand text-white fw-bolder m-3" href="dashboard.html"><img id="posImg" src="asserts/image/pos.png"> Dilki POS System</a>
+
+    <ul class="navbar-nav ">
+        <li >
+            <a  href="#" >
+                <button id="logoutBtn"><img id="logoutImg" src="asserts/image/logout.png"></button>
+            </a>
+        </li>
+
+        <li >
+            <a  href="itemManage.html" >
+                <button id="itemBtn"><img id="itemImg" src="asserts/image/item.png"></button>
+            </a>
+        </li>
+    </ul>
+</nav>
+
+<section class="d-flex flex-row bd-highlight ">
+    <div id="sidebar" class="bg-dark p-2 bd-highlight">
+        <ul class="sidebar navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link text-white m-4" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white m-4" href="customer.html">Customers</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white m-4" href="Item.html">Items</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white m-4" href="orders.html">Orders</a>
+            </li>
+        </ul>
+    </div>
+
+    <!--main.................................-->
+    <div id="main" class="p-2 bd-highlight ">
+        <table class="table table-hover">
+
+            <tbody>
+            <tr>
+                <td><img src="asserts/image/keerisamba.jpg"></td>
+                <td><img src="asserts/image/dhal.jpg"></td>
+                <td><img src="asserts/image/tea.jpg"></td>
+                <td><img src="asserts/image/pepsi.jpg"></td>
+            </tr>
+            <tr>
+                <th>Keeri Samba(1kg)</th>
+                <th>Dhal(1kg)</th>
+                <th>Lipton Celonta(250g)</th>
+                <th>Pepsi(1L)</th>
+            </tr>
+            <tr>
+                <th>250.00/=</th>
+                <th>80.00/=</th>
+                <th>60.00/=</th>
+                <th>100.00/=</th>
+            </tr>
+
+            <tr>
+                <td><img src="asserts/image/cinnemon.jpg"></td>
+                <td><img src="asserts/image/butter.jpg"></td>
+                <td><img src="asserts/image/chilli.jpg"></td>
+                <td><img src="asserts/image/milo.jpg"></td>
+            </tr>
+            <tr>
+                <th>Cinnemon(100g)</th>
+                <th>Anchor Butter</th>
+                <th>Red Chilli(1kg)</th>
+                <th>Milo</th>
+            </tr>
+            <tr>
+                <th>50.00/=</th>
+                <th>300.00/=</th>
+                <th>260.00/=</th>
+                <th>120.00/=</th>
+            </tr>
+
+            </tbody>
+        </table>
+
+    </div>
+    <!--main.................................-->
+
+</section>
+
+
+
+
+
+<footer id="footer" class="text-dark  text-center ">All Rights Reserved</footer>
+
+
+
+<script src="asserts/js/bootstrap.js"></script>
+</body>
+</html>

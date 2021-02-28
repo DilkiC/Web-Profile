@@ -1,0 +1,78 @@
+#posImg{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+#sidebar{
+    /*position: absolute;*/
+    width: 15vw;
+    height: 120vh;
+}
+#sidebarHome{
+    width: 15vw;
+    height: 100vh;
+}
+#sidebardash{
+    width: 15vw;
+    height: 100vh;
+}
+#sidebarcust{
+    width: 15vw;
+    height: 100vh;
+}
+#footer{
+    height: 10vh;
+    background-color: #979191;
+}
+
+#main{
+    width: 85vw;
+    height: 100vh;
+    background-color: #ffffff;
+}
+.navbar-nav .nav-item.active .nav-link {
+    color: #a7a1a1;
+}
+#carouselExampleControls{
+    width: 82vw;
+    height: 82vh;
+}
+.d-block{
+    width: 82vw;
+    height: 82vh;
+}
+#logoutBtn{
+
+    position: absolute;
+    left: 90vw;
+    padding: 3px;
+    width: 30px;
+    height: 30px;
+
+}
+#logoutBtn:hover{
+    background-color: #78abe2;
+}
+#logoutImg{
+
+    width: 30px;
+    height: 30px;
+}
+
+#itemBtn{
+    position: absolute;
+    left: 80vw;
+    padding: 3px;
+    width: 30px;
+    height: 30px;
+}
+#itemBtn:hover{
+    background-color: #78abe2;
+}
+#itemImg{
+    width: 30px;
+    height: 30px;
+
+}
+

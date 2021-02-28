@@ -1,5 +1,32 @@
-header{
+#myBtn {
+    position: fixed;
+    bottom: 10px;
+    float: right;
+    right: 18.5%;
+    left: 92.25%;
+    max-width: 30px;
+    width: 100%;
+    font-size: 12px;
+    border-color: rgba(85, 85, 85, 0.2);
+    background-color: rgb(100,100,100);
+    padding: .5px;
+    border-radius: 4px;
+    box-shadow: 1px 2px 7px 4px rgba(58, 97, 236, 0.84);
 
+
+}
+/*On Hover Color Change*/
+#myBtn:hover {
+    background-color: #7dbbf1;
+
+}
+#topImg{
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+}
+/*.............................................*/
+header{
     width: auto;
     height: 16vh;
     background:linear-gradient(to bottom, #db44db,black);
@@ -11,7 +38,6 @@ header > img {
     height: 50px;
     border-radius: 100%;
     box-shadow: 1px 2px 2px 2px rgba(239, 231, 231, 0.84);
-
 }
 header>ul{
     position: absolute;
@@ -27,7 +53,7 @@ header>ul>li{
     cursor: pointer;
     font-weight: bold;
     color: white;
-
+    /*font-family: "Times New Roman", Times, serif;*/
 }
 /*link colors...................*/
 a:link {
@@ -35,19 +61,16 @@ a:link {
     background-color: transparent;
     text-decoration: none;
 }
-
 a:visited {
     color: lightgray;
     background-color: transparent;
     text-decoration: none;
 }
-
 a:hover {
     color: white;
     background-color: transparent;
     text-decoration: underline;
 }
-
 a:active {
     color: #e32ee8;
     background-color: transparent;
@@ -64,15 +87,10 @@ main>article{
     position: absolute;
     width: 300px;
     height: 300px;
-    /*background: linear-gradient(to bottom, #fa74f3, #19176a);*/
-    /*border-radius: 100%;*/
-
     bottom: 0;
     top: 0;
     margin: auto;
     left: 2vw;
-
-
 }
 main>article::before{
     content: "";
@@ -81,12 +99,10 @@ main>article::before{
     height: 300px;
     background: linear-gradient(to bottom, #fa74f3, #19176a);
     border-radius: 100%;
-
     bottom: 0;
     top: 0;
     margin: auto;
     left: 2vw;
-
 
     animation: rotate 2s infinite;
     transform: rotate(43deg);
@@ -104,7 +120,6 @@ main>article::before{
     width: 95%;
     height: 95%;
     border-radius: 100%;
-
     left: 0;
     top: 0;
     bottom: 0;
@@ -115,8 +130,7 @@ main>article::before{
     position: absolute;
     color: white;
     bottom: 100px;
-    left: 100px;
-
+    left: 120px;
 }
 #dilki{
     position: absolute;
@@ -129,17 +143,13 @@ main>article::before{
     animation-duration: 5s; /*1s for one */
     animation-iteration-count: infinite;
 }
-/*#dilki:hover{
-    font-size:20px ;
-}*/
+
 @keyframes changecolor {
     from{
         color: #e824d4;
-
     }
     to{
         color: white;
-
     }
 }
 #cooray{
@@ -184,14 +194,7 @@ main>div{
     color: white;
     font-size: 20px;
 }
-/*main>img{
-    position: absolute;
-    left: 90vw;
-    width: 50px;
-    height: 50px;
-    border-radius: 30%;
-    cursor: pointer;
-}*/
+
 #fbDiv{
     position: absolute;
     left: 90vw;
@@ -275,8 +278,6 @@ section>h1{
         width: 400px;
     }
     to{
-
-
         width: 200px;
     }
 }
@@ -287,6 +288,7 @@ section>h1{
     height: 400px;
     background: white;
     border-radius: 20px;
+    background:linear-gradient(to bottom, #db44db, #bf4aea);
 
     left: 50%;
     top: 50%;
@@ -298,6 +300,7 @@ section>h1{
     height: 5px;
     background: white;
     border-radius: 20px;
+    background:linear-gradient(to right, #db44db, #6a4aea);
 
     left: 50vw;
     top: 10vh;
@@ -315,13 +318,13 @@ section>h1{
     width: 50px;
     height: 50px;
     border-radius: 100%;
+
 }
 #holyYear{
     position: absolute;
-    color: white;
+    color: #ffffff;
     left: 62vw;
     top: 66vh;
-
 }
 #holyScl{
     position: absolute;
@@ -336,6 +339,7 @@ section>h1{
     height: 5px;
     background: white;
     border-radius: 20px;
+    background:linear-gradient(to right, #db44db, #6a4aea);
 
     left: 43vw;
     bottom: 5vh;
@@ -357,9 +361,8 @@ section>h1{
 #LawYear{
     position: absolute;
     color: white;
-    left: 29vw;
+    left: 25vw;
     top: 52vh;
-
 }
 #LawScl{
     position: absolute;
@@ -374,6 +377,7 @@ section>h1{
     height: 5px;
     background: white;
     border-radius: 20px;
+    background:linear-gradient(to right, #db44db, #6a4aea);
 
     left: 50vw;
     bottom: 20vh;
@@ -391,6 +395,7 @@ section>h1{
     width: 50px;
     height: 50px;
     border-radius: 100%;
+
 }
 #naiYear{
     position: absolute;
@@ -412,6 +417,7 @@ section>h1{
     height: 5px;
     background: white;
     border-radius: 20px;
+    background:linear-gradient(to right, #db44db, #6a4aea);
 
     left: 43vw;
     bottom: 35vh;
@@ -424,16 +430,18 @@ section>h1{
     border-radius: 100%;
     left: 38vw;
     top: 25vh;
+
 }
 #ijseImage{
     width: 50px;
     height: 50px;
     border-radius: 100%;
+
 }
 #ijseYear{
     position: absolute;
     color: white;
-    left: 27vw;
+    left: 22vw;
     top: 24vh;
 
 }
@@ -444,29 +452,28 @@ section>h1{
     top: 29vh;
 }
 /*section1-What I Do............................*/
+#secDo{
+    height: 120vh;
+}
 #secDo>h3:nth-child(2){
     position: absolute;
     color: white;
-    left: 45vw;
-    top:22vh;
+    left: 42vw;
+    top:18vh;
 }
-#secDo>div{
+#secDo>.assDiv{
     position: absolute;
-    width: 100px;
+    width: 105px;
     height: 100px;
-    background: linear-gradient(to bottom, #e230e2, #5e5353);
+    background: linear-gradient(to bottom, #dc2dd9, #5e5353);
+    box-shadow: 6px 5px 7px 4px rgba(238, 189, 235, 0.84);
+
     border-radius: 10%;
 }
 #secDo>h6{
     position: absolute;
-    /*left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);*/
-
     left: 2vw;
     bottom: 0;
-
-
 }
 #assdiv1{
     left: 14vw;
@@ -488,38 +495,74 @@ section>h1{
     left: 78vw;
     top: 35vh;
 }
-#moreAss{
-    position: absolute;
-    color: white;
-    left: 86vw;
-    top: 50vh;
-}
+
 #secDo>h3:nth-child(8){
     position: absolute;
     color: white;
-    left: 47vw;
-    top:60vh;
+    left: 43vw;
+    top:68vh;
 }
-/*#prodiv1{
-    left: 14vw;
-    top:70vh;
-}*/
+
 #prodiv2{
+
     left: 30vw;
-    top:70vh;
+    top:83vh;
 }
 #prodiv3{
     left: 46vw;
-    top:70vh;
+    top:83vh;
 }
 #prodiv4{
     left: 62vw;
-    top:70vh;
+    top:83vh;
 }
-/*#prodiv5{
-    left: 78vw;
-    top:70vh;
-}*/
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+    top:56vh;
+}
+
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+    display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+#barImg{
+    width: 25px;
+    height: 25px;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+    background: linear-gradient(to bottom, #cc2ddc, #5e5353);
+    color: white;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+    background-color: #2bd02b;
+    color: white;
+}
 
 
 /*section1-Skills............................*/
@@ -651,50 +694,6 @@ section>h1{
     top: 68vh;
     left: 20vw;
 }
-/*#sliMain{
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    left: 50vw;
-    top: 10vh;
-    background: #fa74f3;
-    overflow: hidden;
-}
-#sliSec{
-    width: 100%;
-    height: 100%;
-
-    display: flex;
-
-    animation: slider 10s infinite alternate;
-}
-#sliSec>div{
-    height: 100%;
-    width: 100%;
-}
-#slidiv1{
-    background: url("asserts/image/java.jpg");
-    background-size: cover;
-    background-position: center;
-}
-@keyframes slider {
-    0%,20%{
-        transform: translate(-0%);
-    }
-    25%,45%{
-        transform: translate(-25%);
-    }
-    50%,70%{
-        transform: translate(-50%);
-    }
-    75%,100%{
-        transform: translate(-75%);
-    }
-    !*100%{
-
-    }*!
-}*/
-
 
 /*section1-Experience............................*/
 #secEx{
@@ -706,7 +705,7 @@ section>h1{
     height: 100px;
     top: 20vh;
     left: 20vw;
-    border-radius: 30px;
+   /* border-radius: 30px;*/
 }
 #medFacImg{
     /*position: absolute;*/
@@ -714,7 +713,7 @@ section>h1{
     height: 100px;
     top: 20vh;
     left: 20vw;
-    border-radius: 30px;
+    /*border-radius: 30px;*/
 
 }
 section:nth-child(6)>p{
@@ -724,16 +723,7 @@ section:nth-child(6)>p{
     left: 30vw;
     font-size: 20px;
 }
-/*#iframeEx{
-    position: absolute;
-    top: 40vh;
-    left: 30vw;
-    border-top: 10px solid #1b2b7d;
-    border-left: 10px solid #1b2b7d;
-    border-right: 10px solid #1b2b7d;
-    border-bottom: 10px solid #1b2b7d;
-}*/
-/*section1-portfolio & Hobbies............................*/
+
 section:nth-child(7){
     height: 150vh;
 }
@@ -906,21 +896,7 @@ footer{
     left: 5vw;
     top: 60vh;
 }
-/*#fbDiv{
-    position: absolute;
-    left: 90vw;
-    width: 50px;
-    height: 50px;
-    border-radius: 30%;
-    cursor: pointer;
 
-    top: 30vh;
-}
-#fbImage{
-    width: 50px;
-    height: 50px;
-    border-radius: 30%;
-}*/
 #fbDiv2{
     position: absolute;
     left: 90vw;
@@ -979,9 +955,11 @@ footer{
     height: 50px;
     border-radius: 30%;
 }
-/*media.................................*/
+/*media.................................
+.........................................
+.......................................*/
 
-/*media 1*/
+/*media 1................................ok*/
 @media all and (max-width: 320px){
     /*header*/
     header{
@@ -1118,27 +1096,15 @@ footer{
     }
 
     #ijseImage{
-        /*width: 25px;
-        height: 25px;*/
         display: none;
     }
     #naiImage{
-        /*width: 25px;
-        height: 25px;*/
         display: none;
     }
     #ijseImageDiv{
-        /*left: 25vw;
-        top: 19vh;
-        width: 25px;
-        height: 25px;*/
         display: none;
     }
     #naiImageDiv{
-        /*left: 25vw;
-        top: 33vh;
-        width: 25px;
-        height: 25px;*/
         display: none;
     }
     #LawImage{
@@ -1154,19 +1120,19 @@ footer{
         display: none;
     }
     #ijseScl{
-        left: 8vw;
+        left: 16vw;
         top: 23vh;
     }
     #naiScl{
-        left: 9vw;
+        left: 16vw;
         top: 32vh;
     }
     #LawScl{
-        left: 15vw;
+        left: 21vw;
         top: 41vh;
     }
     #holyScl{
-        left: 18vw;
+        left: 21vw;
         top: 50vh;
     }
     .Scl{
@@ -1202,6 +1168,10 @@ footer{
         font-size: 15px;
         left: 42vw;
         top: 55vh;
+    }
+    #secDo.assDiv{
+        width: 94px;
+        height: 80px;
     }
     #assdiv1{
         width: 50px;
@@ -1243,13 +1213,37 @@ footer{
     #prodiv4{
         display: none;
     }
+    .topnav{
+        top: 47vh;
+    }
 
     /*skills*/
     .skilNames{
         font-size: 10px;
     }
 
-    .whiteColors{
+    /*.whiteColors{
+        width: 240px;
+    }*/
+    #javaDiv1{
+        width: 240px;
+    }
+    #sqlDiv1{
+        width: 240px;
+    }
+    #sqlDiv2{
+        width: 230px;
+    }
+    #htmlDiv1{
+        width: 240px;
+    }
+    #htmlDiv2{
+        width: 230px;
+    }
+    #cssDiv1{
+        width: 240px;
+    }
+    #vishuDiv1{
         width: 240px;
     }
     #secSkills{
@@ -1316,24 +1310,21 @@ display: none;
         display: none;
     }
 }
-/*media 2*/
+/*media 2*...........................................ok/*/
 @media all and (min-width: 320px) and (max-width: 375px) {
-    /*header*/
-    header {
+
+    header{
         height: 9vh;
     }
-
-    header > ul {
+    header>ul{
         font-size: 2px;
     }
-
-    header > img {
+    header>img{
         width: 25px;
         height: 25px;
         padding: 7px;
     }
-
-    header > ul > li {
+    header>ul>li{
         padding: 6px;
         font-size: 9px;
     }
@@ -1481,30 +1472,22 @@ display: none;
     }
 
     #ijseImage {
-        /*width: 25px;
-        height: 25px;*/
+
         display: none;
     }
 
     #naiImage {
-        /*width: 25px;
-        height: 25px;*/
+
         display: none;
     }
 
     #ijseImageDiv {
-        /*left: 25vw;
-        top: 19vh;
-        width: 25px;
-        height: 25px;*/
+
         display: none;
     }
 
     #naiImageDiv {
-        /*left: 25vw;
-        top: 33vh;
-        width: 25px;
-        height: 25px;*/
+
         display: none;
     }
 
@@ -1600,10 +1583,7 @@ display: none;
         left: 50vw;
     }
 
-    #moreAss {
-        left: 65vw;
-        top: 42vh;
-    }
+
 
     #assdiv3 {
         display: none;
@@ -1632,13 +1612,30 @@ display: none;
     #prodiv4 {
         display: none;
     }
-
-    /*skills*/
-    .skilNames {
-        font-size: 10px;
+    .topnav {
+        top:48vh;
     }
 
-    .whiteColors {
+
+    #javaDiv1{
+        width: 240px;
+    }
+    #sqlDiv1{
+        width: 240px;
+    }
+    #sqlDiv2{
+        width: 230px;
+    }
+    #htmlDiv1{
+        width: 240px;
+    }
+    #htmlDiv2{
+        width: 230px;
+    }
+    #cssDiv1{
+        width: 240px;
+    }
+    #vishuDiv1{
         width: 240px;
     }
 
@@ -1718,24 +1715,23 @@ display: none;
         display: none;
     }
 }
-/*media 3*/
+
+
+/*media 3......................................error*/
     @media all and (min-width: 375px) and (max-width: 425px) {
-        /*header*/
-        header {
+
+        header{
             height: 9vh;
         }
-
-        header > ul {
+        header>ul{
             font-size: 2px;
         }
-
-        header > img {
+        header>img{
             width: 25px;
             height: 25px;
             padding: 7px;
         }
-
-        header > ul > li {
+        header>ul>li{
             padding: 6px;
             font-size: 9px;
         }
@@ -1864,49 +1860,41 @@ display: none;
 
         #ijseYear {
             top: 19vh;
-            left: 40vw;
+            left: 34vw;
         }
 
         #naiYear {
-            left: 40vw;
+            left: 35vw;
             top: 28vh;
         }
 
         #LawYear {
-            left: 40vw;
+            left: 35vw;
             top: 37vh;
         }
 
         #holyYear {
-            left: 40vw;
+            left: 35vw;
             top: 46vh;
         }
 
         #ijseImage {
-            /*width: 25px;
-            height: 25px;*/
+
             display: none;
         }
 
         #naiImage {
-            /*width: 25px;
-            height: 25px;*/
+
             display: none;
         }
 
         #ijseImageDiv {
-            /*left: 25vw;
-            top: 19vh;
-            width: 25px;
-            height: 25px;*/
+
             display: none;
         }
 
         #naiImageDiv {
-            /*left: 25vw;
-            top: 33vh;
-            width: 25px;
-            height: 25px;*/
+
             display: none;
         }
 
@@ -1927,23 +1915,22 @@ display: none;
         }
 
         #ijseScl {
-            left: 20vw;
+            left: 8vw;
             top: 23vh;
         }
 
         #naiScl {
-            /*left: 9vw;*/
-            left: 21vw;
+            left: 9vw;
             top: 32vh;
         }
 
         #LawScl {
-            left: 25vw;
+            left: 15vw;
             top: 41vh;
         }
 
         #holyScl {
-            left: 25vw;
+            left: 18vw;
             top: 50vh;
         }
 
@@ -2003,10 +1990,7 @@ display: none;
             left: 50vw;
         }
 
-        #moreAss {
-            left: 65vw;
-            top: 42vh;
-        }
+
 
         #assdiv3 {
             display: none;
@@ -2035,13 +2019,30 @@ display: none;
         #prodiv4 {
             display: none;
         }
-
-        /*skills*/
-        .skilNames {
-            font-size: 10px;
+        .topnav {
+            top:48vh;
         }
 
-        .whiteColors {
+
+        #javaDiv1{
+            width: 240px;
+        }
+        #sqlDiv1{
+            width: 240px;
+        }
+        #sqlDiv2{
+            width: 230px;
+        }
+        #htmlDiv1{
+            width: 240px;
+        }
+        #htmlDiv2{
+            width: 230px;
+        }
+        #cssDiv1{
+            width: 240px;
+        }
+        #vishuDiv1{
             width: 240px;
         }
 
@@ -2120,9 +2121,8 @@ display: none;
         #linkedinDiv2 {
             display: none;
         }
-
     }
-/*media 4*/
+/*media 4.....................................ok*/
 @media all and (min-width: 425px) and (max-width: 768px) {
     /*header*/
     header{
@@ -2153,6 +2153,16 @@ display: none;
         left: 33vw;
         top: 39vh;
     }
+    #cooray{
+        left: 42vw;
+        top: 48vh;
+    }
+    #developer{
+        left: 41vw;
+    }
+#seperator{
+    display: none;
+}
 
    /*education*/
     #mainDiv{
@@ -2160,19 +2170,34 @@ display: none;
     }
     #holyDiv{
         width: 50px;
+        top: 19vh;
     }
     #LawDiv{
         width: 50px;
+        bottom: -2vh;
     }
     #naiDiv{
         width: 50px;
+        bottom: 14vh;
     }
     #ijseDiv{
         width: 50px;
+        bottom: 22vh;
     }
     #LawImageDiv{
-        left: 36vw;
+        /*left: 36vw;*/
+        display: none;
     }
+    #holyImageDiv{
+        display: none;
+    }
+    #naiImageDiv{
+        display: none;
+    }
+    #ijseImageDiv{
+        display: none;
+    }
+
     #holyYear{
         font-size: 12px;
         left: 65vw
@@ -2219,65 +2244,83 @@ display: none;
 
 
 }
-/*media 5*/
+/*media 5.........................................ok*/
 @media all and (min-width: 768px) and (max-width: 1024px) {
-    #email{
+    #email {
         bottom: 72px;
     }
-    #dilki{
+
+    #dilki {
         font-size: 37px;
         left: 33vw;
     }
-    #holyImageDiv{
+
+    #holyImageDiv {
         top: 73vh;
     }
-    #holyYear{
+
+    #holyYear {
         top: 72vh;
     }
-    #holyScl{
+
+    #holyScl {
         top: 76vh;
     }
-    #LawDiv{
+
+    #LawDiv {
         left: 42vw;
     }
-    #LawImageDiv{
+
+    #LawImageDiv {
         top: 57vh;
     }
-    #LawYear{
+
+    #LawYear {
         left: 27vw;
         top: 54vh;
     }
-    #LawScl{
+
+    #LawScl {
         left: 3vw;
         top: 58vh;
     }
-    #mainDiv{
+
+    #mainDiv {
         top: 57%;
     }
-    #naiImageDiv{
+
+    #naiImageDiv {
         left: 55vw;
         top: 42vh;
     }
-    #naiYear{
+
+    #naiYear {
         left: 60vw;
     }
-    #naiScl{
+
+    #naiScl {
         left: 60vw;
     }
-    #ijseDiv{
+
+    #ijseDiv {
         left: 42vw;
     }
-    #ijseImageDiv{
+
+    #ijseImageDiv {
         top: 31vh;
     }
-#ijseYear{
-    left: 24vw;
-    top: 29vh;
+
+    #ijseYear {
+        left: 24vw;
+        top: 29vh;
+    }
+
+    #ijseScl {
+        left: 1vw;
+        top: 36vh;
+    }
 }
-#ijseScl{
-    left: 1vw;
-    top: 36vh;
-}
-}
+
+/*media 6.........................................ok*/
 
 
